@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/logo.jpg' %}" type="image/x-icon">
+    <title>{{title}}</title>
+</head>
+<body>
+    <header>
+            <img src="{% static 'img/logo.jpg' %}" alt="logo cafe expreso">
+            <h1>{{h1}}</h1>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>Mk-Report Derechos reservados Café Expreso - Marketing Solutions &copy; 2023</p>
+    </footer>
+</body>
+</html>

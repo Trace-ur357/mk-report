@@ -1,0 +1,14 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <label for="documento">Inserte documento</label>
+    <input type="file" name="documento" accept=".csv">
+    <input type="submit" value="Enviar">
+    
+    <p class="error">{{error}}</p>
+  </form>
+  <a href="/signout/">Cerrar sesion</a>
+{% endblock %}

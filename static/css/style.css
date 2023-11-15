@@ -1,0 +1,90 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Header */
+header {
+    width: 100vw;
+    height: 20vh;
+    color: white;
+    background-color: #e57c3b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+header img {
+    width: 80px;
+}
+
+main {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Formulario */
+.error {
+    color: red;
+    font-size: 20px;
+}
+
+form {
+    background-color: whitesmoke;
+    width: 600px;
+    height: 16rem;
+    border: 2px solid black;
+    margin-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    
+}
+
+form label {
+    font-size: 22px;
+    font-family:  Verdana, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+form[enctype] *{
+    font-size: 18px;
+
+}
+
+form input[type="submit"] {
+    margin-top: 23px;
+    width: 65px;
+    height: 30px;
+}
+
+form :not(input[type="submit"]) {
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    width: 100vw;
+    height: 10vh;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
